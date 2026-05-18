@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  /* COLORS */
+  --theme-color: #2ec8ff;
+  --theme-color-dark: #1d9ac7;
+  --white-color: #fff;
+  --black-color: #333;
+  --light-gray-color: #f4f4f4;
+
+  /* BORDERS & BORDER-RADIUS */
+  --light-border: 1px solid #ddd;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* SHADOWS */
+  --shadow-card: 0 0 20px rgba(0, 0, 0, 0.25);
+}
