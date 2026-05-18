@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
-:root {
+@theme {
   /* COLORS */
-  --theme-color: #2ec8ff;
-  --theme-color-dark: #1d9ac7;
-  --white-color: #fff;
-  --black-color: #333;
-  --light-gray-color: #f4f4f4;
+  --color-theme: #2ec8ff;
+  --color-theme-dark: #1d9ac7;
+  --color-red: #f00;
+  --color-white: #fff;
+  --color-black: #333;
+  --color-light-gray: #f4f4f4;
+  --color-dark-gray: #aaa;
 
   /* BORDERS & BORDER-RADIUS */
   --light-border: 1px solid #ddd;
@@ -15,5 +17,30 @@
   --radius-lg: 20px;
 
   /* SHADOWS */
-  --shadow-card: 0 0 20px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+  /* DURATIONS */
+  --fast-duration: 400ms;
+  --medium-duration: 600ms;
+  --long-duration: 1s;
+
+  /* ANIMATIONS */
+  --floating-animation: float var(--long-duration) linear infinite;
+}
+
+/* Main Container */
+.main-container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }

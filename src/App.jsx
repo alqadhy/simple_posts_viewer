@@ -1,5 +1,23 @@
+// Components
+import Header from "./components/Header";
+import MainContainer from "./components/MainContainer";
+import CreateNewPostBtn from "./components/CreateNewPostBtn";
+import AllPosts from "./components/AllPosts";
+import Footer from "./components/Footer";
+
 function App() {
-  return <h1 className="bg-[#f00] text-white font-bold">Hello World!</h1>;
+  return (
+    <>
+      <Header />
+      <main className="page pt-15 pb-15">
+        <MainContainer>
+          <CreateNewPostBtn />
+          <AllPosts />
+        </MainContainer>
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
