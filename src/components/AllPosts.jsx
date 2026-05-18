@@ -33,7 +33,7 @@ function AllPosts() {
   return (
     <section className="all-posts">
       <h2 className="mb-5 text-xl md:text-2xl font-bold">All Posts</h2>
-      <div className="posts grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
+      <div className="posts grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
         {allPosts.map((post) => {
           return <Post key={post.id} title={post.title} body={post.body} />;
         })}
